@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Jose Flores</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>About me</h1>
+    <section>
+      <p>Short personal introduction. Interests, values, and what you enjoy working on.</p>
+      <p>Optional items: hobbies, community work, learning goals, favorite tools.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br />
+        LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a><br />
+        GitHub: <a href="https://github.com/josetf2396">github.com/josetf2396</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; <span id="y"></span> Jose Flores</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
