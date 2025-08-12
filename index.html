@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Flores - Resume</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
-        h1, h2 { color: #333; }
-        hr { margin: 20px 0; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jose Flores</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
     <h1>Jose Flores</h1>
-    <p>Email: your.email@example.com | <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> | <a href="https://github.com/yourusername">GitHub</a></p>
-    
-    <hr>
-    <h2>Professional Summary</h2>
-    <p>Results-driven IT professional with experience in SharePoint administration, Power Platform development, and web technologies...</p>
-    
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript, React</li>
-        <li>SharePoint Online, SPFx, Power Apps, Power Automate, Power BI</li>
-        <li>C#, SQL, T-SQL</li>
-        <li>Azure, AWS (basic)</li>
-    </ul>
-    
-    <h2>Experience</h2>
-    <p><strong>Engineering & Project Assistant</strong> – Wellhead Electric Company, Inc.<br>
-    Dates: Month YYYY – Present</p>
-    <ul>
-        <li>Administer SharePoint sites, lists, and document libraries.</li>
-        <li>Develop Power Apps and workflows to improve internal processes.</li>
-    </ul>
-    
-    <h2>Education</h2>
-    <p>B.S. in Computer Science – Your University – Year</p>
-    
-    <h2>Projects</h2>
-    <ul>
-        <li>Document Management Automation in SharePoint</li>
-        <li>Custom SharePoint Forms with conditional formatting</li>
-    </ul>
+    <p>Engineering and Project Assistant. SharePoint and Power Platform. Web and data enthusiast.</p>
+
+    <section>
+      <h2>Welcome</h2>
+      <p>Thanks for visiting. Use the navigation above to view my resume or learn more about me.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; <span id="y"></span> Jose Flores</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
