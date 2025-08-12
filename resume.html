@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Jose Flores</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Jose Flores</h1>
+    <p>Email: your.email@example.com
+      | <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+      | <a href="https://github.com/josetf2396">GitHub</a>
+    </p>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Results driven IT professional with experience in SharePoint administration, Power Platform development, and web technologies.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript, React</li>
+        <li>SharePoint Online, SPFx, Power Apps, Power Automate, Power BI</li>
+        <li>C Sharp, SQL, T SQL</li>
+        <li>Azure, AWS basics</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <p><strong>Engineering and Project Assistant</strong>, Wellhead Electric Company, Inc. — Month YYYY to Present</p>
+      <ul>
+        <li>Administer SharePoint sites, lists, and document libraries.</li>
+        <li>Develop Power Apps and workflows to improve internal processes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>B S in Computer Science — Your University — Year</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>Document management automation in SharePoint.</li>
+        <li>Custom SharePoint forms with conditional formatting.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; <span id="y"></span> Jose Flores</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
