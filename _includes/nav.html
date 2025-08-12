@@ -1,0 +1,6 @@
+<nav>
+  <a href="{{ '/' | relative_url }}" class="{% if page.nav == 'home' %}active{% endif %}">Home</a>
+  <a href="{{ '/about.html' | relative_url }}" class="{% if page.nav == 'about' %}active{% endif %}">About</a>
+  <a href="{{ '/resume.html' | relative_url }}" class="{% if page.nav == 'resume' %}active{% endif %}">Resume</a>
+  <a href="{{ '/projects.html' | relative_url }}" class="{% if page.nav == 'projects' %}active{% endif %}">Projects</a>
+</nav>
