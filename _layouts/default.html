@@ -12,22 +12,23 @@
   </style>
 </head>
 <body>
-  <header>
+  <header role="banner">
     {% include nav.html %}
   </header>
 
-  <main class="container">
+  <main class="container" role="main">
     {{ content }}
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <div class="container">
       <small>&copy; <span id="y"></span> Jose Flores</small>
     </div>
   </footer>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    const y = document.getElementById('y');
+    if (y) y.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
