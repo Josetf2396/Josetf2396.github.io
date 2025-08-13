@@ -108,21 +108,23 @@ section em {
   font-style: italic;
 }
 
-/* Add some visual separation for personal vs professional sections */
-section:nth-of-type(n+3) {
+/* Personal sections styling - specific to about page */
+.parks-section,
+.movies-section,
+.music-section {
   background: #f8fafc;
   border-left: 4px solid #3b82f6;
 }
+
+/* Section-specific icons */
+.parks-section h2::before { content: "🏞️ "; }
+.movies-section h2::before { content: "🎬 "; }
+.music-section h2::before { content: "🎵 "; }
 
 /* Or alternatively, add icons or different styling for personal sections */
 section h2 {
   position: relative;
 }
-
-/* You could add emoji or icons to section headers */
-section:nth-of-type(3) h2::before { content: "🏞️ "; }
-section:nth-of-type(4) h2::before { content: "🎬 "; }
-section:nth-of-type(5) h2::before { content: "🎵 "; }
 
 /* Links styling */
 a { color: #3b82f6; text-decoration: none; }
@@ -179,5 +181,4 @@ li { margin-bottom: 4px; }
   h1 { font-size: 1.8rem; }
   .contact-info { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
-
 
