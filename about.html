@@ -25,7 +25,8 @@ nav: about
 <section>
   <h2>Contact</h2>
   <p>
-    Email: <a href="mailto:your.email@example.com">Jose.TF2396@gmail.com</a><br />
-    GitHub: <a href="https://github.com/josetf2396">github.com/josetf2396</a>
+    Email: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br />
+    LinkedIn: <a href="{{ site.contact.linkedin_url }}">linkedin.com/in/{{ site.contact.linkedin_handle }}</a><br />
+    GitHub: <a href="{{ site.contact.github_url }}">github.com/{{ site.contact.github_handle }}</a>
   </p>
 </section>
